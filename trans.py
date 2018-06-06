@@ -68,7 +68,7 @@ if __name__ == '__main__':
         shanbei_trans(args.source[0])
 
     if args.dest != None:
-        google_trans(source, dest=args.dest[0])
+        google_trans(source, dest=args.dest)
     elif args.verbose == True or language == "zh-CN":
         google_trans(source,dest='en')
     else:
