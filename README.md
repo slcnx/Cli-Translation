@@ -10,6 +10,7 @@ Download the trans.py file and install requirements using pip.
 then:
 ```bash
 sudo mv trans.py /usr/local/bin/
+cd /usr/local/bin/
 sudo chmod +x trans.py
 exit
 ```
