@@ -10,14 +10,14 @@ from googletrans import Translator
 translator = Translator(service_urls=[
       'translate.google.cn',
     ])
-# 扇贝单词 只能翻译一个单词
+# shanbei api
 shanbei = 'https://www.shanbay.com/api/v1/bdc/search/?version=2&word='
 
 
 
 def shanbei_trans(word):
     '''
-    只能翻译单个单词
+    can translate single chinese word to english
     '''
     try:
         response = requests.get(shanbei + word).text
